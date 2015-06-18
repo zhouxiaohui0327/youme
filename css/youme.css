@@ -1,0 +1,135 @@
+body{
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    font-size: 14px;
+}
+img {
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.fullpage-wrapper{
+    height: 100%;
+    position: relative;
+    touch-action: none;
+    -webkit-transform: translate3d(0px, -1983px, 0px);
+    transform: translate3d(0px, -1983px, 0px);
+    transition: all 700ms ease;
+    -webkit-transition: all 700ms ease;
+}
+.head_index {
+    width: 968px;
+    padding: 0px 0px;
+    line-height: 22px;
+    position: fixed;
+    left: 50%;
+    margin-left: -484px;
+    top: 0px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.head_index img{
+    display: inline-block;
+    border: none;
+
+}
+.section .ys1 {
+    position: absolute;
+    top: 28%;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+.section.ys1 img.ys1_img {
+    width: 29%;
+    max-width: 565px;
+    min-width: 525px;
+}
+.section .number {
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 75%;
+    width: 100%;
+    font-size: 16px;
+    color: #eeeeee;
+}
+.section .number span {
+    font-family: arial;
+    font-weight: bold;
+    display: inline;
+    margin: 0 3px;
+    color: #ebb678;
+    font-size: 16px;
+}
+.section h5 {
+    width: 100%;
+    left: 0%;
+    position: absolute;
+    top:20%;
+    opacity: 0;
+    filter: alpha(opacity:0);
+    color: #fff;
+    text-align: center;
+    font-size: 42px;
+    line-height: 175%;
+    font-weight: normal;
+}
+
+
+.section .icon_tx {
+    width: 101px;
+    height: 101px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50.5px;
+    bottom: 125px;
+    display:none;
+}
+.section .icon_slide {
+    display: none;
+    font-size: 14px;
+    color: white;
+    line-height: 22px;
+    width: 100%;
+    height: 90px;
+    padding-top: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    opacity: .6;
+
+}
+.section .icon_slide1{
+    display:none;
+    font-size: 14px;
+    color: white;
+    line-height: 22px;
+    width: 100%;
+    height: 90px;
+    padding-top: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+
+}
+.section .icon_slide1 h6 {
+     font-size: 24px;
+     color: #fff;
+     line-height: 20px;
+    text-rendering: optimizelegibility;
+    display: block;
+    -webkit-margin-before: 2.33em;
+    -webkit-margin-after: 2.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+ }
+.section .icon_slide1 .bt2 {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 0;
+    display: inline-block;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>游觅，当地人带你玩，通过一个人、认识一座城，体验一种生活</title>
+    <meta name="keywords" content="游觅,当地人,导游,地陪,包车">
+    <meta name="description" content="在游觅你可以找到当地人，让他带你玩，认识这座城市，体验与众不同的生活。">    
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/youme.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+
+<style>
+</style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		'navigation': true,
+	});
+});
+</script>
+</head>
+
+
+
+
+
+<body>
+<div class="head_index" style="display:block">
+    <h1><a href=""><img src="images/youmeLogo.png" alt="游觅"></a></h1>
+</div>
+
+<div id="dowebok" class="fullpage-wrapper" style="text-align: center; color: #fff;">
+
+
+
+
+	<div class="section" style="background: url('images/bg.jpg')no-repeat center center;background-size:100%">
+        <div class="ys1">
+            <img class="ys1_img" src="images/ys1.png" alt="倾听你在乎的"><br>
+        </div>
+        <h1><p class="number">已开通<span>100+城市</span>，已注册<span>200+</span>当地人</p></h1>
+    </div>
+
+
+
+
+
+
+	<div class="section section2 active" style="background: url('images/PIC2.jpg')no-repeat center center;background-size:100%">
+        <h5 style=" opacity: 1;left: -120% "><span>带你<br>深入西湖群山，寻觅神秘山间水库<br></span></h5>
+        <div class="icon_tx" >
+            <img style=" width: 95px;height: 95px;border-radius: 50px;border: 3px solid #adc8ff;" src="images/touxiang2.jpg" alt="">
+        </div>
+        <div class="icon_slide " style="background: url(images/icon_bg.png) no-repeat center top;" ></div>
+        <div class="icon_slide1">
+            <h6 style="margin-bottom: 10px;margin-top: 0">走走停停stone</h6>
+            <p class="bt2">出生在内蒙古，在杭州工作生活10年了。从小个性叛逆不喜欢一成不变的生活，于是远离家乡探寻未知世界</p>
+        </div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="section section3" style="background: url('images/PIC3.png')no-repeat center center;background-size:100%">
+        <h5 style="opacity: 1; "><span>带你<br>在呼伦贝尔大草原策马奔腾</span></h5>
+        <div class="icon_tx" >
+            <img style=" width: 95px;height: 95px;border-radius: 50px;border: 3px solid #adc8ff;" src="images/touxiang3.png" alt="黄玉龙">
+        </div>
+        <div class="icon_slide" style="background: url(images/icon_bg.png) no-repeat center top"></div>
+        <div class="icon_slide1">
+            <h6 style="margin-bottom: 10px;margin-top: 0">黄玉龙</h6>
+            <p class="bt2">我叫黄玉龙，是地地道道的内蒙古呼伦贝尔人，喜欢探索发现不一样的游玩路线，真诚欢迎朋友们来美丽的呼伦贝尔.</p>
+        </div>
+	</div>
+
+
+
+
+
+
+
+	<div class="section section4" style="background: url('images/PIC4.jpg')no-repeat center center;background-size:100%">
+        <h5 style=" opacity: 1; "><span>和欧巴一起<br>开启浪漫的首尔之旅</span></h5>
+        <div class="icon_tx" >
+            <img style=" width: 95px;height: 95px;border-radius: 50px;border: 3px solid #adc8ff;" src="images/touxiang4.jpg" alt="안준일">
+        </div>
+        <div class="icon_slide" style="background: url(images/icon_bg.png) no-repeat center top"></div>
+        <div class="icon_slide1">
+            <h6 style="margin-bottom: 10px;margin-top: 0">안준일</h6>
+            <p class="bt2">我是安先生，是土生土长的韩国人,现定居首尔。希望可以带更多的中国人看韩国的美景。我曾在北京生活工作了7年，语言沟通方面肯定没有没问题哦。</p>
+        </div>
+	</div>
+
+
+
+    <div class="section">
+        <h3>第五屏</h3>
+        <p>这是最后一屏</p>
+    </div>
+</div>
+
+
+<script>
+    $(function(){
+        $('#dowebok').fullpage({
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+            afterLoad: function(anchorLink, index){
+                if(index == 2){
+                    $('.section').find('h5').delay(500).animate({
+                        left: '0'
+                    }, 1000, 'easeOutExpo');
+                    $('.section2').find('.icon_slide1, .icon_tx').fadeIn(3000);
+
+                }
+                if(index == 3){
+                    $('.section3').find('p').delay(500).animate({
+                        bottom: '0'
+                    }, 1500, 'easeOutExpo');
+                }
+                if(index == 4){
+                    $('.section4').find('p').fadeIn(2000);
+                }
+            },
+            onLeave: function(index, direction){
+                if(index == '2'){
+                    $('.section').find('h5').delay(500).animate({
+                        left: '-120%'
+                    }, 1500, 'easeOutExpo');
+                    $('.section2').find('.icon_slide1, .icon_tx').fadeOut(3000);
+                }
+                if(index == '3'){
+                    $('.section3').find('p').delay(500).animate({
+                        bottom: '-120%'
+                    }, 1500, 'easeOutExpo');
+                }
+                if(index == '4'){
+                    $('.section4').find('p').fadeOut(2000);
+                }
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
+<a href="http://www.dowebok.com/77.html" style="display:none">jQuery全屏滚动插件fullPage.js</a>
+</body>
+</html>
