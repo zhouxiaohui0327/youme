@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/animate.min.css"/>
 
 <style>
+    .section4 h5 { bottom: -200%;}
 </style>
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
@@ -46,12 +47,12 @@ $(function(){
 
 
 
-	<div class="section section2 active" style="background: url('images/PIC2.jpg')no-repeat center center;background-size:100%">
-        <h5 style=" opacity: 1;left: -120% "><span>带你<br>深入西湖群山，寻觅神秘山间水库<br></span></h5>
+	<div class="section section2" style="background: url('images/PIC2.jpg')no-repeat center center;background-size:100%">
+        <h5 style="left: -120% "><span>带你<br>深入西湖群山，寻觅神秘山间水库<br></span></h5>
         <div class="icon_tx" >
             <img style=" width: 95px;height: 95px;border-radius: 50px;border: 3px solid #adc8ff;" src="images/touxiang2.jpg" alt="">
         </div>
-        <div class="icon_slide " style="background: url(images/icon_bg.png) no-repeat center top;" ></div>
+        <div class="icon_slide" style="background: url(images/icon_bg.png) no-repeat center top;" ></div>
         <div class="icon_slide1">
             <h6 style="margin-bottom: 10px;margin-top: 0">走走停停stone</h6>
             <p class="bt2">出生在内蒙古，在杭州工作生活10年了。从小个性叛逆不喜欢一成不变的生活，于是远离家乡探寻未知世界</p>
@@ -67,7 +68,7 @@ $(function(){
 
 
 	<div class="section section3" style="background: url('images/PIC3.png')no-repeat center center;background-size:100%">
-        <h5 style="opacity: 1; "><span>带你<br>在呼伦贝尔大草原策马奔腾</span></h5>
+        <h5 style="left:-120% "><span>带你<br>在呼伦贝尔大草原策马奔腾</span></h5>
         <div class="icon_tx" >
             <img style=" width: 95px;height: 95px;border-radius: 50px;border: 3px solid #adc8ff;" src="images/touxiang3.png" alt="黄玉龙">
         </div>
@@ -84,8 +85,8 @@ $(function(){
 
 
 
-	<div class="section section4" style="background: url('images/PIC4.jpg')no-repeat center center;background-size:100%">
-        <h5 style=" opacity: 1; "><span>和欧巴一起<br>开启浪漫的首尔之旅</span></h5>
+	<div class="section section4 active" style="background: url('images/PIC4.jpg')no-repeat center center;background-size:100%">
+        <h5 style="left:-120%"><span>和欧巴一起<br>开启浪漫的首尔之旅</span></h5>
         <div class="icon_tx" >
             <img style=" width: 95px;height: 95px;border-radius: 50px;border: 3px solid #adc8ff;" src="images/touxiang4.jpg" alt="안준일">
         </div>
@@ -111,48 +112,48 @@ $(function(){
             sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
             afterLoad: function(anchorLink, index){
                 if(index == 2){
-                    $('.section').find('h5').delay(500).animate({
+                    $('.section2').find('h5').delay().animate({
                         left: '0'
                     }, 1000, 'easeOutExpo');
-                    $('.section2').find('.icon_slide1, .icon_tx').fadeIn(3000);
-
+                    $('.section2').find('.icon_slide1, .icon_tx,.icon_slide').fadeIn(2000);
                 }
-                if(index == 3){
-                    $('.section3').find('p').delay(500).animate({
-                        bottom: '0'
-                    }, 1500, 'easeOutExpo');
+                if(index == 3) {
+                    $('.section3').find('h5').delay().animate({
+                        left: '0'
+                    }, 1000, 'easeOutExpo');
+                    $('.section3').find('.icon_slide1, .icon_tx,.icon_slide').fadeIn(2000);
                 }
                 if(index == 4){
-                    $('.section4').find('p').fadeIn(2000);
+                    $('.section4').find('h5').delay().animate({
+                        left: '0'
+                    }, 1000, 'easeOutExpo');
+                    $('.section4').find('.icon_slide1, .icon_tx,.icon_slide').fadeIn(2000);
                 }
             },
+
+
             onLeave: function(index, direction){
                 if(index == '2'){
-                    $('.section').find('h5').delay(500).animate({
+                    $('.section2').find('h5').delay().animate({
                         left: '-120%'
-                    }, 1500, 'easeOutExpo');
-                    $('.section2').find('.icon_slide1, .icon_tx').fadeOut(3000);
+                    }, 500, 'easeOutExpo');
+                    $('.section2').find('.icon_slide1, .icon_tx,.icon_slide').css("display","none");
                 }
                 if(index == '3'){
-                    $('.section3').find('p').delay(500).animate({
-                        bottom: '-120%'
+                    $('.section3').find('h5').delay(500).animate({
+                        left: '-120%'
                     }, 1500, 'easeOutExpo');
+                    $('.section3').find('.icon_slide1, .icon_tx,.icon_slide').css("display","none");
                 }
                 if(index == '4'){
-                    $('.section4').find('p').fadeOut(2000);
+                    $('.section4').find('h5').delay().animate({
+                        left: '-120%'
+                    }, 1000, 'easeOutExpo');
+                    $('.section4').find('.icon_slide1, .icon_tx,.icon_slide').css("display","none")
                 }
             }
         });
     });
 </script>
-
-
-
-
-
-
-
-<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
-<a href="http://www.dowebok.com/77.html" style="display:none">jQuery全屏滚动插件fullPage.js</a>
 </body>
 </html>

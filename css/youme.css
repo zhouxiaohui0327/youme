@@ -67,7 +67,7 @@ img {
     left: 0%;
     position: absolute;
     top:20%;
-    opacity: 0;
+    opacity: 1;
     filter: alpha(opacity:0);
     color: #fff;
     text-align: center;
@@ -75,8 +75,6 @@ img {
     line-height: 175%;
     font-weight: normal;
 }
-
-
 .section .icon_tx {
     width: 101px;
     height: 101px;
@@ -99,7 +97,6 @@ img {
     bottom: 0px;
     text-align: center;
     opacity: .6;
-
 }
 .section .icon_slide1{
     display:none;
