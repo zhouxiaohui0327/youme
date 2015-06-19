@@ -109,6 +109,11 @@ $(function(){
 <script>
     $(function(){
         $('#dowebok').fullpage({
+            'verticalCentered': false,
+            'css3': true,
+            'navigationPosition': 'right',
+            'resize':true,
+            'scrollingSpeed':'700',
             sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
             afterLoad: function(anchorLink, index){
                 if(index == 2){
@@ -137,19 +142,19 @@ $(function(){
                     $('.section2').find('h5').delay().animate({
                         left: '-120%'
                     }, 500, 'easeOutExpo');
-                    $('.section2').find('.icon_slide1, .icon_tx,.icon_slide').css("display","none");
+                    $('.section2').find('.icon_slide1, .icon_tx,.icon_slide').hide();
                 }
                 if(index == '3'){
                     $('.section3').find('h5').delay(500).animate({
                         left: '-120%'
                     }, 1500, 'easeOutExpo');
-                    $('.section3').find('.icon_slide1, .icon_tx,.icon_slide').css("display","none");
+                    $('.section3').find('.icon_slide1, .icon_tx,.icon_slide').hide();
                 }
                 if(index == '4'){
                     $('.section4').find('h5').delay().animate({
                         left: '-120%'
                     }, 1000, 'easeOutExpo');
-                    $('.section4').find('.icon_slide1, .icon_tx,.icon_slide').css("display","none")
+                    $('.section4').find('.icon_slide1, .icon_tx,.icon_slide').hide()
                 }
             }
         });
